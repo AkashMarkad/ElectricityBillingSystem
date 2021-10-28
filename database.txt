@@ -1,0 +1,10 @@
+------------------------: DBMS Project Database queries :----------------------------
+
+1 - create database ElectricityBillingSystem;
+2 -  use ElectricityBillingSystem;
+3 - create table customer ( name varchar(50) not null , meter_no int primary key , address varchar(100) not null , city varchar(50) not null , state varchar(50) not null , email varchar(50) not null , phone_no varchar(10) );
+4 - create table meter_info ( meter_no int ,  foreign key(meter_no) references customer(meter_no) , meter_location varchar(50) not null , meter_type varchar(50) not null , phase_code varchar(30) not null , bill_type varchar(50) not null , days varchar(23) );
+5 - create table tax ( cost_per_unit int , meter_rent int , service_charge int , service_tax int , swacch_bharat_cess int , fixed_tax int );
+6 - create table login ( meter_no int , username varchar(50) not null , name varchar(50) not null , password varchar(30)  not null , user varchar(50) not null );
+7 - create table bill ( meter_no int , month varchar(50) not null , units float , total_bill float not null , status varchar(50) );
+8 - insert into tax values( 9 , 47 , 22 , 57 , 6 , 18);
