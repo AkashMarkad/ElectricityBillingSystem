@@ -4,4 +4,4 @@ This project is in java language with database. Mysql database is used in this p
 
 Validation and verification and snapshot of project - 
 
-
+https://github.com/AkashMarkad/ElectricityBillingSystem/blob/master/Project-Snapshot.docx
